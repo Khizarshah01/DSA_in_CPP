@@ -1,0 +1,56 @@
+#+title: Selection Sort
+#+AUTHOR: Shashwat Agrawal
+
+* There are different types of sorting algorithms, We are going to see them.
+
+** Suppose if we have a array.
+
++---+---+---+---+---+---+
+| 1 | 6 | 4 | 2 | 3 | 5 |
++---+---+---+---+---+---+
+
+If we are going to sort this array we will be get,
+
++---+---+---+---+---+---+
+| 1 | 2 | 3 | 4 | 5 | 6 |
++---+---+---+---+---+---+
+
+We can either sort an array in increasing or decreasing order
+
+
+* What is Selection Sort
+
+Selection sort is nothing but we play rounds and pick the smallest element & put it in the right place
+
+1. You can see the selection sort problem by going to the below link
+
+[[https://www.codingninjas.com/codestudio/problems/selection-sort_981162][Check out the question]]
+
+
+* Complexity of the Selection Sort
+
+** Space Complexity
+
+1. As during the solving the problem we didn't used any of the other space except creating some variables & we know the space complexity when we create variables is constant.
+
+*** Space Complexity = O(1) ---> Constant
+
+** Time Complexity
+
+1. As we have to do some swapping, let the array size is 5 so in the first round we have to do 4 comparison, in the second one 3 comparison till 1.
+
+   Which is ---> 1 + 2 + 3 + .... (n-2) + (n-1)
+
+*** Time Complexity = n(n-1)/2 = (n^2-n)/2 = O(n^2)
+
+** Best case & Worst case
+
+1. In this case even if we get the sorted array we are going to make the same amount of comparison & even in the worst case where elements is not sorted at all we will be making the same amount of comparison.
+
+*** Best Case = O(n^2)
+
+*** Worst Case = O(n^2)
+
+* Use Case for Selection Sort
+
+Whenever the size of the array is small, think about the selection sort.
